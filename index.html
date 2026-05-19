@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Name Picker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Choose Your Perfect Name</h1>
+  </header>
+  <main>
+    <section id="name-generator">
+      <h2>Generate a Random Name</h2>
+      <button id="randomNameBtn">Generate Random Name</button>
+      <p id="randomName"></p>
+      
+      <h2>Get Theme-based Suggestions</h2>
+      <form id="themeForm">
+        <input type="text" id="themeInput" placeholder="Enter a theme (e.g., nature, fantasy)">
+        <button type="submit">Get Names</button>
+      </form>
+      <ul id="themeResults"></ul>
+    </section>
+  
+    <section id="filters">
+      <h2>Choose Filters</h2>
+      <label for="genderFilter">Gender:</label>
+      <select id="genderFilter">
+        <option value="all">All</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+
+      <label for="originFilter">Origin:</label>
+      <select id="originFilter">
+        <option value="all">All</option>
+        <option value="american">American</option>
+        <option value="indian">Indian</option>
+        <option value="english">English</option>
+      </select>
+      <button id="applyFiltersBtn">Apply Filters</button>
+    </section>
+    
+    <section id="favorites">
+      <h2>Saved Favorite Names</h2>
+      <ul id="favoritesList"></ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
